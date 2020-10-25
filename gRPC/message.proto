@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message reqName {
+    string name = 1;
+}
+
+message resObj {
+    string obj = 1;
+}
+
+service Message {
+    rpc FindPlayer(reqName) returns (resObj) {}
+}
